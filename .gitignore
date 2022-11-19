@@ -1,0 +1,6 @@
+bin/
+dist/
+docs/
+node_modules/
+tsc_output/
+package-lock.json

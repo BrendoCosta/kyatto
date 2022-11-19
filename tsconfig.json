@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "target": "es2018",
+        "module": "esnext",
+        "moduleResolution": "node",
+        "removeComments": false,
+        "newLine": "LF",
+        "strict": true,
+        "declaration": false,
+        "declarationMap": false,
+        "outDir": "tsc_output",
+        "rootDir": "./",
+        "baseUrl": ".",
+        "paths": {
+            "@kyatto*": ["src/ts/kyatto/*"]
+        }
+    },
+    "include": ["./src/**/*.ts", "./src/**/*.d.ts"]
+}

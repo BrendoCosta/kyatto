@@ -1,0 +1,27 @@
+{
+  "name": "kyatto",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/BrendoCosta/kyatto#readme",
+  "keywords": [],
+  "author": "Brendo Costa <brendocosta@id.uff.br> (https://github.com/BrendoCosta)",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/bundle.cjs",
+  "scripts": {
+    "build": "rimraf dist && tsc -b && rollup -c rollup.config.js && npx pkg ./dist/bundle.cjs -o bin/kyatto",
+    "build-docs": "npx jsdoc -r ./tsc_output/src/ts/ -d ./docs",
+    "dev": "node ./dist/bundle.cjs"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^23.0.2",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@types/node": "^18.11.9",
+    "jsdoc": "^4.0.0",
+    "pkg": "^5.8.0",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.79.1",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-typescript2": "^0.34.1"
+  }
+}
